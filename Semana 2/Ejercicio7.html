@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loteria</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Any">
+</head>
+<body>
+	<script type="text/javascript">
+		
+        var numeroDeLoteria = Math.floor(Math.random() * 99999) + 1;
+        const NUMERO_DE_JUGADOR = prompt('Elige un billete de lotería: ')
+        
+        function loteria(NUMERO_DE_JUGADOR, numeroDeLoteria){
+        
+            (NUMERO_DE_JUGADOR == numeroDeLoteria) ? alert('Enhorabuena. ¡Eres el ganador!') : 
+            alert(`Las oportunidades están a tu favor. Sigue intentándolo. El número ganador es el: ${numeroDeLoteria}`)
+        
+        }
+
+        loteria(NUMERO_DE_JUGADOR, numeroDeLoteria)
+	</script>
+</body>	
+</html>

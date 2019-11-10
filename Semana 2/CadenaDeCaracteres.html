@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadenas de caracteres</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Any">
+</head>
+<body>
+	<script type="text/javascript">
+        var cadena = prompt('Introduce una frase')
+        var indices = [];
+        
+        for(var i = 0; i < cadena.length; i++) {
+            if (cadena[i] === "a") indices.push(i);
+            }
+
+        alert('La letra a está ' + indices.length + ' veces en la frase');
+	</script>
+</body>	
+</html>

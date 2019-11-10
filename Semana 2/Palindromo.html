@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindromo</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Any">
+</head>
+<body>
+	<script type="text/javascript">
+    
+    var frase = prompt("Escribe una frase para saber sí es un palíndromo","La ruta nos aporto otro paso natural");
+   
+    function esPalindromo(frase){
+      
+      frase = frase.toLowerCase().replace(/\s/g,"");
+      fraseReversa = frase.split("").reverse().toString()
+
+      for (var i = 0; i < ((fraseReversa.length)-1); i++) {
+        fraseReversa = fraseReversa.replace(",","")
+      };
+   
+      if (frase == fraseReversa){
+        resultado = "es un palíndromo"
+      } else {
+        resultado = "no es un palíndromo"
+      }
+      alert("La frase " + resultado)
+    }
+
+    esPalindromo(frase)
+
+	</script>
+</body>	
+</html>

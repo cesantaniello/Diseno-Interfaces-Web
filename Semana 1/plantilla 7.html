@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primeros pasos en JavaScript</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Any">
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function pintaescalera(escalones){
+			var escalones = 4
+			var array = []
+			var linea = " ",
+
+			for(i = 1; i < escalones; i++){
+				linea = " ".repeat(escalones - i)
+				linea += "#".repeat(i)
+
+				array.push(linea)
+			}
+			return array
+		}
+
+		console.log(pintaescalera(4))
+
+	</script>
+</body>	
+</html>
