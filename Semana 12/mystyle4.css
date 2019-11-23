@@ -1,0 +1,32 @@
+body {
+    border: 8px solid black;
+    min-height: 100vh
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 106px;
+}
+
+.header {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+a {
+    padding: 8px 16px;
+    margin-left: -16px;
+}
+
